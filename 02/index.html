@@ -19,17 +19,10 @@
             <li>Sexto</li>
             <li>Sétimo</li>
         </ol>
-
-        <button id="para">PARAR</button>
     </div>
     <script>
-        var parador = 0;
-
-        $('#para').on("click", parador = 1)
-
-        do{
-             $('h1').fadeOut(1000).fadeIn(1000)
-        }while (parador == 0)
+        $('li').css("color", "#f00")
+        $('h1').fadeOut(1000).fadeIn(1000)
     </script>
 </body>
 </html>
