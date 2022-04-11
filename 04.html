@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em JQ</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        #bloco{
+            width: 200px;
+            height: 200px;
+            background-color: #03e6c8;
+        }
+    </style>
+</head>
+<body>
+    <div id="bloco"></div>
+    <p id="texto"></p>
+
+    <script>
+        $('#bloco').click(()=>{
+            $('#bloco').css("background-color", "#3406e6")
+            $('#texto').text("Você clicou no bloco")
+        })
+
+        $('#bloco').mouseenter(()=>{
+            $('#bloco').css("background-color", "#e2e603")
+            $("#texto").text("Você entrou no bloco")
+        })
+
+        $('#bloco').mouseleave(()=>{
+            $('#bloco').css("background-color", "#e69703")
+            $("#texto").text("Você saiu do bloco")
+        })
+    </script>
+</body>
+</html>
